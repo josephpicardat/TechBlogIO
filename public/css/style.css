@@ -1,24 +1,122 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+:root {
+  --main: #4f6367;
+  --cadetBlue: #7a9e9f;
+  --powerdedBlue: #b8d8d8;
+  --beige: #eef5db;
+  --red: #fe5f55;
 }
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
+body {
+  background-color: var(--cadetBlue);
+  width: 100vw;
+  height: 100vh;
 }
 
-.no-button:hover {
-  color: #065b83;
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--main);
+  position: fixed;
+  top: 0;
+}
+
+#navbarList {
+  background-color: transparent;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  background-color: transparent;
+  height: 100%;
+  color: var(--powerdedBlue);
+  border: solid var(--beige) 0.2rem;
+  border-radius: 5px;
+  padding: 0.25rem;
+}
+
+.navItem {
+  list-style: none;
+}
+
+.navItem a {
+  color: var(--beige);
+  font-size: 1.5rem;
+}
+
+.navItem a:hover {
+  color: var(--red);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  align-items: center;
+}
+
+/* cards */
+.card {
+  width: 100%;
+  border: solid var(--powerdedBlue) 0.5rem;
+  border-radius: 15px;
+}
+
+.cardHeader {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--powerdedBlue);
+  color: var(--main);
+}
+
+.cardBody {
+  padding: 0.5rem;
+  border-radius: 0 0 15px 15px;
+  background-color: var(--cadetBlue);
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabels {
+  font-size: 2rem;
+  width: 100%;
+}
+
+#usernameInputLogin,
+#passwordInputLogin,
+#usernameInputSignup,
+#passwordInputSignup {
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--beige);
+}
+
+.btn {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.log_sign {
+  font-size: 1.5rem;
   text-decoration: underline;
+  width: auto;
+  margin: 0 0 0.25rem 0.25rsem;
+  color: var(--beige);
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+.log_sign:active,
+.log_sign:hover {
+  color: var(--red);
 }
