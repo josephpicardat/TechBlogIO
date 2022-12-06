@@ -34,7 +34,7 @@ What did I learn?
 
 ## Usage
 
-Deployed Application:
+Deployed Application: https://techblogio.herokuapp.com/
 
 ![Login page](./assets/login.png)
 
