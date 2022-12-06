@@ -1,0 +1,19 @@
+<div class="posts">
+  {{#each posts}}
+  <section class="card">
+    <div class="cardHeader">
+      <h2>
+        <a href="/post/{{id}}">{{title}}</a>
+      </h2>
+
+      <div>
+        Posted by {{User.username}} on {{format_date}} {{createdAt}} 
+      </div>
+    </div>
+
+    <div class="cardBody">
+      {{body}}
+    </div>
+  </section>
+  {{/each}}
+</div>
